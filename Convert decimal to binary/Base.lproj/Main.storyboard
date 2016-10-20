@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Convert_decimal_to_binary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Wr-85-1TO">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Wsi-Cq-snG"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNl-Jx-Yfv">
+                                <state key="normal" title="Convert to binary"/>
+                                <connections>
+                                    <action selector="convertToBinaryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O5B-t2-tDR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Binary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3g-jv-jus">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEE-S6-fTC">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d3g-jv-jus" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4cJ-KQ-8c2"/>
+                            <constraint firstItem="8Wr-85-1TO" firstAttribute="top" secondItem="UEE-S6-fTC" secondAttribute="bottom" constant="47" id="GMs-SV-Xnb"/>
+                            <constraint firstItem="UEE-S6-fTC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IUy-xI-ODk"/>
+                            <constraint firstItem="d3g-jv-jus" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QCc-og-M2l"/>
+                            <constraint firstAttribute="trailing" secondItem="d3g-jv-jus" secondAttribute="trailing" id="ZjC-mX-rgx"/>
+                            <constraint firstItem="UEE-S6-fTC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="79" id="f2I-Ul-UlP"/>
+                            <constraint firstItem="8Wr-85-1TO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nV2-rB-Q6t"/>
+                            <constraint firstItem="LNl-Jx-Yfv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="okQ-3H-Yg3"/>
+                            <constraint firstItem="d3g-jv-jus" firstAttribute="top" secondItem="LNl-Jx-Yfv" secondAttribute="bottom" constant="47" id="qAM-4y-pyl"/>
+                            <constraint firstItem="LNl-Jx-Yfv" firstAttribute="top" secondItem="8Wr-85-1TO" secondAttribute="bottom" constant="30" id="u8C-Yu-ifR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="binaryLabel" destination="d3g-jv-jus" id="T44-Tp-5kR"/>
+                        <outlet property="regularNumberTextField" destination="8Wr-85-1TO" id="XqX-KW-Xph"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
